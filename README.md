@@ -6,7 +6,7 @@
 
 ---
 
-You can visit my [personal website](pantanvita.github.io)
+You can visit my [personal website](https://pantanvita.github.io/)
 
 You can also contact me on github via this [link](https://github.com/pantanvita)
 
