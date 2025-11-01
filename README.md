@@ -1,14 +1,14 @@
-# anvitapant.github.io
-#Welcome to my 1st webpage
 
-I am Anvita pant
+# Welcome to my github repository
 
-#Animals
-1. Dog
-2. Dolphins
-3. Squirrels
+---
 
-#Fruits
-1. watermelon
-2. Mango
-3. Apple
+## I am Anvita Pant
+
+---
+
+## Here you shall find all my assignments for WIS-Python-course-20263071
+
+
+
+
