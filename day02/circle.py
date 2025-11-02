@@ -26,11 +26,16 @@ diameter= 2 * radius
 area= 3.14 * radius * radius
 circumference= 2 * 3.14 * radius
 
-# Print the outputs
+# Check if radius=0 and print the output accordingly
 
-print(f"The diameter of the circle is: {diameter} units")
-print(f"The area of the circle is: {area} sq units")
-print(f"The circumference of the circle is: {circumference} units")
+if radius==0:
+    print("A circle with radius= 0 units is a point with no area or circumference. Basically it does not exist!")
+else:
+    print(f"The diameter of the circle is: {diameter} units")
+    print(f"The area of the circle is: {area} sq units")
+    print(f"The circumference of the circle is: {circumference} units")
+
+
 
 
 
