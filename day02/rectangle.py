@@ -32,7 +32,7 @@ perimeter= 2 * (length + width)
 print(f"The area of the rectangle is: {area} sq units")
 print(f"The perimeter of the rectangle is: {perimeter} units")
 
-# Compare area and perimeter
+# Compare area and perimeter of the rectangle
 
 if area > perimeter:
     print("The area is greater than the perimeter.")

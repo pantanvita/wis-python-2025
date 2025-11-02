@@ -20,7 +20,7 @@ def circle_area(radius):
 
 radius= circle_area("Enter the radius of the circle: ")
 
-# Formula to calculate area and circumference and diameter
+# Formula to calculate the diameter, area and circumference
     
 diameter= 2 * radius
 area= 3.14 * radius * radius
