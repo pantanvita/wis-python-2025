@@ -4,6 +4,7 @@ I have written codes for 2 tools that take input in three formats- input(), GUI 
 * Polymerase Chain Reaction (PCR) is a technique commonly used in Molecular Biology for DNA amplification. The technique has several steps- the most important one is the intial primer designing. Along with this, we need to perform concentration and volume calculations for the reagents frequently.
 * I have personally felt the need of a tool for designing the primers and computing these calculations on a daily basis and displaying the results in a tabular format. 
 * Therefore, I designed the PCR Primer Tool which has two parts- a) for primer designing and b) for reagent calculations (using C1V1= C2V2)
+* There are 3 .py files for this tool as pcr-primer-tool-input, -gui, -cmdline
 * For the code: **pcr-primer-tool-input**, I wrote the skeleton of the code myself.
 * To proofread and smoothen the code, I used **Chat GPT-5.0**
 * Significant prompts used that helped in writing this code-
@@ -27,9 +28,11 @@ This is done to check the primer length does not exceed DNA sequence entered.
 11) **The GUI application and command line code was created entirely using AI Chat GPT-5.0**
 
 
+
 **TOOL 2: PROTEIN M/Z CALCULATION TOOL**
 * In bottom-up proteomics, protein sequences are regularly cleaved into peptides using enzymes- trypsin and chymotrypsin (routinely used in lab) and then analyzed in mass spectrometers producing charged ions: +1, +2 and/or +3
 * I have created a tool that calculates which peptide sequences can be hypothetically generated when a protein (sequence input by user) is cleaved using trypsin and/or chymotrypsin.
+* There are 3 .py files for this tool as protein-mz-tool-input, -gui, -cmdline
 * To proofread and smoothen the code, I used **Chat GPT-5.0**
 * Significant prompts used that helped in writing this code-
 1) Create a library of amino acid masses
