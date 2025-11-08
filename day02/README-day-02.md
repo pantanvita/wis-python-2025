@@ -6,7 +6,7 @@ I have written codes for 2 tools that take input in three formats- input(), GUI 
 * Therefore, I designed the PCR Primer Tool which has two parts- a) for primer designing and b) for reagent calculations (using C1V1= C2V2)
 * For the code: **pcr-primer-tool-input**, I wrote the skeleton of the code myself.
 * To proofread and smoothen the code, I used Chat GPT-5.0
-* Prompts used-
+* Significant prompts used that helped in writing this code-
 1) What to write in python if I want to scan different positions along the DNA to find new potential candidate primers?
    Reply: for start in range(0, len(forward_strand) - primer_length * 2):
 2) Is there a python function that can read a string in reverse?
@@ -31,13 +31,22 @@ This is done to check the primer length does not exceed DNA sequence entered.
 * In bottom-up proteomics, protein sequences are regularly cleaved into peptides using enzymes- trypsin and chymotrypsin (routinely used in lab) and then analyzed in mass spectrometers producing charged ions: +1, +2 and/or +3
 * I have created a tool that calculates which peptide sequences can be hypothetically generated when a protein (sequence input by user) is cleaved using trypsin and/or chymotrypsin.
 * To proofread and smoothen the code, I used Chat GPT-5.0
-* Prompts used-
+* Significant prompts used that helped in writing this code-
 1) Create a library of amino acid masses
 2) Write a for-loop that scans protein sequence entered and checks when Trypsin cleaves after K or R (except when followed by P) and for Chymotrypsin cleaves after F, W, or Y (except when followed by P)
-3) How to write the code for multiple charges +1, +2 and +3?
-4) Add mass of H2O
-5) Count for total number of peptides generated
-6) The GUI application and command line code was created entirely using AI
+   Reply- for i, aa in enumerate(sequence):
+        current += aa
+        if aa in ['K', 'R'] and not (i + 1 < len(sequence) and sequence[i + 1] == 'P'):
+            peptides.append(current)
+            current = ""
+    if current:
+        peptides.append(current)
+    return peptides
+3) What is .strip() in the code?
+4) How to write the code for multiple charges +1, +2 and +3?
+5) Add mass of H2O
+6) Count for total number of peptides generated
+7) The GUI application and command line code was created entirely using AI
 
 
 Additonally, while thinking of ideas for these tools, I took inspiration from my classmates who designed interesting tools such as "DNA Sequence Validator" during the class.
