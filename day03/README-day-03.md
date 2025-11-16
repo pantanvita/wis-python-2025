@@ -29,6 +29,7 @@
 **ISSUES FACED**
 * No error encountered in test_protein_utils.py using Unittest. All 7 tests passed in 0.001s.
 * 1 test always failing in test_dna_utils.py using Pytest. Unable to resolve it despite multiple attempts (including taking help from AI)
+* ![pcr-test-failure-msg](day03/test-failure.PNG)
 
 
 **List of installed versions**
