@@ -56,3 +56,10 @@ reactome_downloader/
 * Write a python based project that can be done using Reactome. The program will download the files from the reactome database and save it on the user's desktop in a file or in multiple files. Separate the "business logic" and the UI (User Interface). 
 * How to provide the email addresss if you need to use some API secrets
 * What to do with the json file?
+
+## **Troubleshooting issues**
+
+@shoshisernik reviewed my code. She is getting the error-
+ERROR: config.json not found. Please create with your email.
+while i am not getting the same when using my email id. Unable to troubleshoot it.
+Any comments/ reviews are welcome. I would like to learn how to troubleshoot this error.
