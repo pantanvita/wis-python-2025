@@ -5,7 +5,7 @@
 ## **Project Inspiration**
 
 While working in the field of Proteomics, I deal with hundreds of proteins at a time and often need to refer to the protein-protein interactions in biological pathways to gain an understanding of the larger picture.
-Several databases exist where the key biological pathways involved can be viewed interactively, one such common databse is Reactome.
+Several databases exist where the key biological pathways involved can be viewed interactively, one such common database is Reactome.
 
 ## **REACTOME [https://reactome.org/]**
 
