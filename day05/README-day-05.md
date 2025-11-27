@@ -39,6 +39,14 @@ The game can be played on two levels: Level-1 and Level-2.
 * Since this is a basic program for test run, it can be extended to a longer length of the word ladder (eg. 10 word ladder).
 * For 5-letter/6-letter words etc., a new wordlist file (.txt) verified by global English standards can be added.
 
+## Files
+
+Level-1 file: word_ladder_L1.py
+Word list for level-1: wordlist_3Letter.txt
+Level-2 file: word_ladder_L2.py
+Word list for level-2: wordlist_4Letter.txt
+Test file: test-word-ladder.py
+
 ## Dependencies
 
 * A word list saved as .txt file (Unicode UTF-8). Only one word saved in a line, preferably in lowercase, no special characters or numbers. File should be in the same folder. 
