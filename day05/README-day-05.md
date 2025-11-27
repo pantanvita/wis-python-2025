@@ -13,7 +13,7 @@ This is a simple, easy-to-use Python code that runs on CLI.
 
 The game can be played on two levels: Level-1 and Level-2.
 
-## 1. Level-1 (word_ladder_L1):
+## 1. Level-1 (word_ladder_L1)
 * The code loads a word list from a separate file called wordlist_3Letter.txt
 * This word list acts as a dictionary that conatins all the **1,351 valid three-letter words** in the English language that have been approved by Collins Dictionary and also used in Scrabble [https://scrabble.collinsdictionary.com/word-lists/three-letter-words-in-scrabble/].
 * The program imports the package random and chooses a 3-letter word randomly from the wordlist_3Letter.txt
@@ -23,7 +23,7 @@ The game can be played on two levels: Level-1 and Level-2.
 * The program also terminates when the user either enters an invalid word (not defined by Collins Dictionary) or changes more than one letter at a time or enters more than 3 letters.
 * The program also keeps a track of your score. Once the maximum 5 word ladder is reached, the program displays your score.
 
-## 2. Level-2 (word_ladder_L2):
+## 2. Level-2 (word_ladder_L2)
 * The code loads a word list from a separate file called wordlist_4Letter.txt
 * This word list acts as a dictionary that conatins all the **5,663 valid four-letter words** in the English language that have been approved by Collins Dictionary and also used in Scrabble [https://scrabble.collinsdictionary.com/word-lists/four-letter-words-in-scrabble/].
 * The program imports the package random and chooses a 4-letter word at random from the wordlist_4Letter.txt
