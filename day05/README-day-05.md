@@ -33,7 +33,7 @@ The game can be played on two levels: Level-1 and Level-2.
 * The program also terminates when the user either enters an invalid word (not defined by Collins Dictionary) or changes more than one letter at a time or enters more than 4 letters.
 * The program also keeps a track of your score. Once the maximum 8 word ladder is reached, the program displays your score.
 
-## LIMITATIONS
+## Limitations
 
 * The program is written only for 3-letter and 4-letter English words and maximum ladder of 5 words and 8 words respectively can be built.
 * Since this is a basic program for test run, it can be extended to a longer length of the word ladder (eg. 10 word ladder).
