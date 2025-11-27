@@ -38,21 +38,21 @@ def play_ladder_round(current_word: str, new_word: str, word_list: set):
 # Load word list from file
 # -----------------------
 
-def load_word_list(wordlist: str) -> set:
+def load_word_list(wordlist_4Letter: str) -> set:
     """
     Load a text file containing one word per line.
     Returns a set of words (lowercase, stripped).
     """
     words = set()
     try:
-        with open(wordlist, "r") as file:
+        with open(wordlist_4Letter, "r") as file:
             for line in file:
                 word = line.strip().lower()
-                # Only include valid 3-letter alphabetic words
-                if len(word) == 3 and word.isalpha():
+                # Only include valid 4-letter alphabetic words
+                if len(word) == 4 and word.isalpha():
                     words.add(word)
     except FileNotFoundError:
-        print(f"Error: Cannot find {wordlist}. Make sure it exists.")
+        print(f"Error: Cannot find {wordlist_4Letter}. Make sure it exists.")
         return set()
 
     return words
@@ -65,8 +65,8 @@ def load_word_list(wordlist: str) -> set:
 def main():
     print("Loading dictionary…")
 
-    # Load all 3-letter English words from file
-    word_list = load_word_list("wordlist.txt")
+    # Load all 4-letter English words from file
+    word_list = load_word_list("wordlist_4Letter.txt")
 
     if not word_list:
         print("Word list is empty. Exiting.")
@@ -76,14 +76,14 @@ def main():
         print("ERROR: Your word list file does not contain enough 3-letter words.")
         return
 
-    print(f"Loaded {len(word_list)} valid 3-letter words.\n")
+    print(f"Loaded {len(word_list)} valid 4-letter words.\n")
     
     print("\nWelcome to the Word Ladder Game!")
     print("Rules:")
     print(" - Enter a new word that differs by ONE letter from the last word")
     print(" - Your word must be valid and approved by the Collins Dictionary list.")
     print(" - You get only 2 incorrect attempts.")
-    print(" - The ladder ends after 5 total words.\n")
+    print(" - The ladder ends after 8 total words.\n")
 
     # Choose random starting word
     current_word = random.choice(list(word_list))
@@ -120,8 +120,8 @@ def main():
             print("You used all 2 incorrect attempts!")
             break
 
-        if len(ladder) == 5:
-            print("Great job! You completed a 5-word ladder!")
+        if len(ladder) == 8:
+            print("Great job! You completed a 8-word ladder!")
             break
 
     print("\nGame Over!")

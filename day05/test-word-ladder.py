@@ -1,5 +1,5 @@
 import pytest
-from word_ladder import one_letter_diff, is_valid_word, play_ladder_round
+from word_ladder_L1 import one_letter_diff, is_valid_word, play_ladder_round
 
 # A small mock word list for testing
 word_list = {"cat", "cot", "dot", "dog", "dig", "big", "bag", "bat"}
