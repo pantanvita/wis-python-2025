@@ -88,7 +88,7 @@ def test_zz_summary(request):
     print("-----------------------------------------")
 
     if failed == 0:
-        print("🎉 ALL TESTS PASSED! 🎉")
+        print("ALL TESTS PASSED!")
 
     # Always succeeds so it doesn't affect result
     assert True
