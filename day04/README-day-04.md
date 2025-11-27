@@ -1,0 +1,65 @@
+# **Day 04 assignment**
+
+# REACTOME DATA DOWNLOADER
+
+## **Project Inspiration**
+
+While working in the field of Proteomics, I deal with hundreds of proteins at a time and often need to refer to the protein-protein interactions in biological pathways to gain an understanding of the larger picture.
+Several databases exist where the key biological pathways involved can be viewed interactively, one such common database is Reactome.
+
+## **REACTOME [https://reactome.org/]**
+
+![reactome-logo](reactome-logo.png)
+
+REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.
+The goal of the databse is to provide the user a graphical map of known biological processes and pathways along with intuitive bioinformatics tools for the visualization, interpretation and analysis of biological pathway knowledge.
+
+## **REACTOME DATA DOWNLOADER**
+
+The REACTOME DATA DOWNLOADER downloads data files (e.g., pathway data, reactions, or protein interactions) from the Reactome database and saves them locally as .json files. 
+The downloaded file contains metadata including the type of reaction, genes and transcripts involved, species, compartment, synonyms, its interactors etc.
+The user specifies a pathway ID/ Stable Identifier and the code downloads pathway/reaction data in JSON format from the Reactome Content Service (Reactome’s REST API) or directly from their FTP/data download server, saving them on the user’s Desktop.
+The code separates the business logic from the UI (CLI) and the user can also store their email in a separate config file for API calls.
+
+## **Project Structure**
+
+reactome_downloader/
+
+│
+
+├── main.py              # User Interface (CLI)
+
+├── reactome_service.py  # Business logic
+
+├── config.json          # User email / API key
+
+├── .gitignore
+
+
+## **How It Works**
+
+1. User provides Reactome pathway ID (e.g., R-HSA-199420).
+2. User chooses format: JSON or BioPAX.
+3. Program fetches the file from Reactome’s Content Service API or download server.
+4. Files are saved as .json in:
+   Desktop/Reactome_Downloads/<PATHWAY_ID>/
+
+## **Limitations of Reactome Data Downloader**
+
+* Can download files of only one given pathway ID at a time. Currently not modified for downloading bulk files.
+* Can download files in .json format. Currently not modified to download data in .pdf format (more readable).
+* Uses CLI as UI. Currently not modified for GUI.
+
+
+## **Significant prompts given to the AI (Used ChatGPT-5.0)**
+
+* Write a python based project that can be done using Reactome. The program will download the files from the reactome database and save it on the user's desktop in a file or in multiple files. Separate the "business logic" and the UI (User Interface). 
+* How to provide the email addresss if you need to use some API secrets
+* What to do with the json file?
+
+## **Troubleshooting issues**
+
+@shoshisernik reviewed my code. She is getting the error-
+ERROR: config.json not found. Please create with your email.
+while i am not getting the same when using my email id. Unable to troubleshoot it.
+Any comments/ reviews are welcome. I would like to learn how to troubleshoot this error.
