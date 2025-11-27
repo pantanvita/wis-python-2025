@@ -82,7 +82,7 @@ def main():
     print("Rules:")
     print(" - Enter a new word that differs by ONE letter from the last word")
     print(" - Your word must be valid and approved by the Collins Dictionary list.")
-    print(" - You get only 2 incorrect attempts.")
+    print(" - You get only 3 incorrect attempts.")
     print(" - The ladder ends after 8 total words.\n")
 
     # Choose random starting word
@@ -101,12 +101,12 @@ def main():
         if player_word not in word_list:
             mistakes += 1
             print("Invalid move: word not in dictionary. \n")
-            print(f"Mistakes: {mistakes}/2 \n")
+            print(f"Mistakes: {mistakes}/3 \n")
             
         elif not one_letter_diff(current_word, player_word):
             mistakes += 1
             print("Invalid move: word must differ by ONE letter. \n")
-            print(f"Mistakes: {mistakes}/2 \n")
+            print(f"Mistakes: {mistakes}/3 \n")
             
         else:
             # Valid move
@@ -116,8 +116,8 @@ def main():
             print(f"Good! Ladder so far: {ladder}\n")
 
         # End conditions
-        if mistakes == 2:
-            print("You used all 2 incorrect attempts!")
+        if mistakes == 3:
+            print("You used all 3 incorrect attempts!")
             break
 
         if len(ladder) == 8:
