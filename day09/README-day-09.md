@@ -5,7 +5,6 @@ Given file- subjects.txt
 ## Initial analysis performed-
 * Added the deadline of each assignment (subjects.txt)
 * Normalized the .txt file, extracted the individual headers, parsed the submission records and arranged in clean Pandas DataFrame
-  (subjects_reordered.ipynb)
 * Output .xlsx file- assignment_submission_report.xlsx
 * This file was used for further analysis
 
@@ -25,7 +24,6 @@ Given file- subjects.txt
 
 ## File details
 1. **subjects.txt**: contains the original .txt file provided along with added assignment deadlines
-2. **subjects_reordered.ipynb**: code for parsing and arranging the submission data in clean Pandas DataFrame
 3. **assignment_submission_report.xlsx**: final output from subjects_reordered.ipynb
 4. **assignment_analysis.ipynb**: code for carrying out final analysis using the .xlsx file
 5. **assignment_analysis_report.xlsx**: the final analysis report
