@@ -31,7 +31,7 @@ Given file- `subjects.txt`
 ## Installations
 1. Anaconda
 2. Jupyter Notebook
-3. Python v3.13+
+3. Python v3.9+
 4. numpy
 5. pandas
 6. matplotlib.pyplot
